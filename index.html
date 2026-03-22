@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🌅 My Creative Photo Gallery 🌿</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <h2>Welcome to My World of Beauty</h2>
+    <p>Explore the magic of nature through pictures of sunsets, mountains, forests, and flowers — all captured with love and creativity.</p>
+    <button onclick="scrollToSection('gallery')">View Gallery</button>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section">
+    <h2>Photo Gallery</h2>
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide">
+          <img src="images/photo1.jpg" alt="Sunset">
+          <div class="caption">Golden Sunset Bliss</div>
+        </div>
+        <div class="slide">
+          <img src="images/photo2.jpg" alt="Mountains">
+          <div class="caption">Mountains Majesty</div>
+        </div>
+        <div class="slide">
+          <img src="images/photo3.jpg" alt="Forest">
+          <div class="caption">Serenity in Nature</div>
+        </div>
+        <div class="slide">
+          <img src="images/photo4.jpg" alt="Flowers">
+          <div class="caption">Nature’s Beauty</div>
+        </div>
+      </div>
+      <div class="controls">
+        <button onclick="prevSlide()">⬅ Prev</button>
+        <button onclick="nextSlide()">Next ➡</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About This Project</h2>
+    <p>This is a creative photo gallery website built using HTML, CSS, and JavaScript, then hosted inside a Docker container using Nginx.</p>
+    <p>It demonstrates how simple static web projects can be containerized and deployed easily!</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>🌸 Made with ❤️ using Docker 🚀</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
